@@ -381,6 +381,8 @@ ul, ol {
   padding: 78px 0;
 }
 .registration .title_h2 {
+  max-width: 400px;
+  width: 100%;
   margin-bottom: 58px;
 }
 
@@ -431,7 +433,7 @@ ul, ol {
   margin-bottom: 8px;
 }
 .registration__block .text {
-  font-weight: 500;
+  font-weight: 600;
   font-size: 14px;
   line-height: 150%;
   color: #444444;
@@ -767,6 +769,11 @@ ul, ol {
   letter-spacing: 0.02em;
   color: #222222;
   margin-bottom: 8px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.contacts__wrap .phone a:hover {
+  color: #47BC1F;
 }
 .contacts__wrap .address {
   max-width: 300px;
@@ -811,6 +818,11 @@ ul, ol {
   margin-right: 8px;
   border-radius: 50%;
   background: #8681BC;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contacts__wrap .soc .item:hover {
+  border-radius: 10px;
 }
 .contacts__wrap ul li {
   display: -webkit-box;
@@ -876,6 +888,9 @@ ul, ol {
   letter-spacing: 0.02em;
   color: #8681BC;
 }
+.footer__left .link:hover {
+  text-decoration: underline;
+}
 
 .footer__center {
   width: 33%;
@@ -897,6 +912,9 @@ ul, ol {
 .footer__center .text a {
   color: #8681BC;
 }
+.footer__center .text a:hover {
+  text-decoration: underline;
+}
 
 .footer__right {
   width: 33%;
@@ -917,6 +935,9 @@ ul, ol {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #444444;
+}
+.footer__right .link:hover {
+  text-decoration: underline;
 }
 .footer__right svg {
   margin-left: 20px;
@@ -1088,7 +1109,7 @@ ul, ol {
     height: 44px;
     background: #F5F5FA url(../img/phone.svg) no-repeat center;
     border-radius: 50%;
-    color: transparent;
+    color: transparent !important;
     overflow: hidden;
   }
   .footer {
