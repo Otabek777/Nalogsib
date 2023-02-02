@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url(../fonts/lato/lato.css);
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -370,7 +370,7 @@ ul, ol {
 }
 
 .title_h2 .h2 {
-  font-weight: 600;
+  font-weight: 900;
   font-size: 32px;
   line-height: 38px;
   color: #222222;
@@ -381,7 +381,6 @@ ul, ol {
   padding: 78px 0;
 }
 .registration .title_h2 {
-  max-width: 400px;
   width: 100%;
   margin-bottom: 58px;
 }
@@ -433,7 +432,7 @@ ul, ol {
   margin-bottom: 8px;
 }
 .registration__block .text {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 14px;
   line-height: 150%;
   color: #444444;
