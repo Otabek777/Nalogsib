@@ -1400,12 +1400,23 @@ ul, ol {
   background: url(../img/border2.svg) no-repeat center;
   background-size: 100% 100%;
   margin-bottom: 8px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .additional_services .blocks .text {
   font-weight: 900;
   font-size: 16px;
   line-height: 19px;
   color: #222222;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.additional_services .blocks:hover .img {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+.additional_services .blocks:hover .text {
+  color: #2E8237;
 }
 .additional_services .block1 {
   width: 120px;
@@ -2128,6 +2139,26 @@ ul, ol {
             transform: translate(0);
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+  }
+  .consultation {
+    display: block;
+    padding: 43px 0 47px 0;
+  }
+  .consultation__wrap {
+    padding: 41px 35px 40px 35px;
+  }
+  .consultation__wrap .title {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 26px;
+  }
+  .consultation__item {
+    margin: 0;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+  .consultation__item:last-child {
+    margin-bottom: 0;
   }
   .additional_services {
     display: block;
