@@ -977,6 +977,28 @@ ul, ol {
 .crumbs__right {
   padding-top: 80px;
 }
+.crumbs__right li {
+  position: relative;
+  margin-right: 32px;
+}
+.crumbs__right li:last-child {
+  margin-right: 0;
+}
+.crumbs__right li::after {
+  content: "|";
+  position: absolute;
+  top: 0;
+  right: -17px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #666;
+}
+.crumbs__right li:last-child::after {
+  display: none;
+}
 .crumbs__right ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1000,10 +1022,6 @@ ul, ol {
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #666666;
-}
-.crumbs__right ul p span {
-  display: block;
-  margin: 0 12px;
 }
 
 .banner_2 .slick-prev, .banner_2 .slick-next {
