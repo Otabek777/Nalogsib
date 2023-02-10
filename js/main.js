@@ -16,6 +16,11 @@ if (window.innerWidth < 1399) {
         }, 1);
     });
 };
+if($(".sub_menu .down")) {
+    $(".sub_menu .down").click(function() {
+        $(this).toggleClass("open");
+    });
+};
 
 if(document.querySelector('.input_phone')) {
     window.addEventListener("DOMContentLoaded", function() {

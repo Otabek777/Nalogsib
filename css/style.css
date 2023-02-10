@@ -198,6 +198,7 @@ ul, ol {
   position: absolute;
   top: 119px;
   left: 50%;
+  z-index: 99;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   max-width: 1110px;
@@ -222,17 +223,47 @@ ul, ol {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.sub_menu ul {
-  padding: 17px 66px 43px 38px;
+.sub_menu .down {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  cursor: pointer;
 }
-.sub_menu li {
+.sub_menu .down svg {
+  width: 12px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.sub_menu .down svg path {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.sub_menu .down:hover svg path {
+  fill: #47BC1F;
+}
+.sub_menu .down.open svg {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.sub_menu .down.open svg path {
+  fill: #47BC1F;
+}
+
+.sub_menu > ul {
+  padding: 17px 24px 43px 38px;
+}
+
+.sub_menu > ul > li {
   margin-bottom: 8px;
+  position: relative;
+  padding-right: 16px;
 }
-.sub_menu li:last-child {
+
+.sub_menu > ul > li:last-child {
   margin-bottom: 0;
 }
-.sub_menu a {
-  display: block;
+
+.sub_menu > ul > li a {
   font-weight: 700;
   font-size: 14px;
   line-height: 150%;
@@ -240,8 +271,32 @@ ul, ol {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
-.sub_menu a:hover {
+
+.sub_menu > ul > li a:hover {
   color: #47BC1F;
+}
+
+.sub_menu_inside {
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.sub_menu_inside ul {
+  padding: 8px 0px 4px 16px;
+  border-left: 2px solid #47BC1F;
+}
+.sub_menu_inside li {
+  margin-bottom: 4px;
+}
+.sub_menu_inside li:last-child {
+  margin-bottom: 0;
+}
+
+.sub_menu .down.open + .sub_menu_inside {
+  max-height: 1000px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .header__navbar > ul {
@@ -594,6 +649,9 @@ ul, ol {
   color: #444444;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+.services__block .text span {
+  display: block;
 }
 
 .services__block:hover .text {
@@ -1024,6 +1082,9 @@ ul, ol {
   color: #666666;
 }
 
+.banner_2 {
+  height: 494px;
+}
 .banner_2 .slick-prev, .banner_2 .slick-next {
   width: 70px;
   height: 70px;
@@ -2050,6 +2111,7 @@ ul, ol {
   }
   .banner_2 {
     display: block;
+    height: auto;
   }
   .banner_2__wrap {
     padding-bottom: 36px;
