@@ -21,6 +21,12 @@ if($(".sub_menu .down")) {
         $(this).toggleClass("open");
     });
 };
+if($(".accordion_btn")) {
+    $(".accordion_btn").click(function() {
+        $(this).parent().toggleClass("active");
+    });
+};
+
 
 if(document.querySelector('.input_phone')) {
     window.addEventListener("DOMContentLoaded", function() {
