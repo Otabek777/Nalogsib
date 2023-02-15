@@ -1699,6 +1699,10 @@ ul, ol {
   margin-bottom: 64px;
 }
 
+.consultation_form.liquidation_form {
+  background: url(../img/consultation-form3.png) no-repeat center/cover;
+}
+
 .liquidation__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2791,7 +2795,7 @@ ul, ol {
     height: auto;
   }
   .banner_2__block {
-    height: 463px;
+    height: 518px;
   }
   .banner_2__block .content {
     top: 0;
@@ -2804,6 +2808,7 @@ ul, ol {
     font-size: 32px;
     line-height: 38px;
     margin-bottom: 16px;
+    margin-top: 0;
   }
   .banner_2__block .text {
     max-width: 284px;
@@ -2811,9 +2816,7 @@ ul, ol {
     margin: 0 auto;
     font-size: 16px;
     line-height: 150%;
-  }
-  .banner_2__block .btn {
-    display: none;
+    margin-bottom: 24px;
   }
   .banner_2 .slick-prev, .banner_2 .slick-next {
     top: 195px;
@@ -2953,5 +2956,149 @@ ul, ol {
   }
   .additional_services .logo {
     top: 540px;
+  }
+  .liquidation_banner .banner_2__block .content {
+    width: 100%;
+    left: 0;
+  }
+  .banner_2__block .title2 {
+    margin-top: 0;
+  }
+  .banner_2__block .content::after {
+    width: 189px;
+    height: 216px;
+    top: 229px;
+  }
+  .banner_2__block .title2 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 16px;
+  }
+  .liquidation_banner .banner_2__block .content .text {
+    max-width: 280px;
+    margin-bottom: 24px;
+  }
+  .liquidation {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 50px;
+  }
+  .liquidation .title_h2 {
+    margin-bottom: 24px;
+  }
+  .liquidation__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .liquidation__block {
+    width: 100%;
+    min-height: 323px;
+    margin: 0;
+    margin-bottom: 16px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 33px 20px 36px 20px;
+  }
+  .liquidation__block .img {
+    width: 125px;
+    height: 125px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  .liquidation__block .content {
+    width: 100%;
+    padding: 0;
+  }
+  .liquidation__block .title {
+    font-size: 18px;
+    line-height: 150%;
+  }
+  .consultation_form.liquidation_form .consultation_form__block .h5 {
+    margin-bottom: 0;
+  }
+  .consultation_form.liquidation_form .consultation_form__wrap {
+    position: relative;
+    padding-bottom: 111px;
+  }
+  .consultation_form.liquidation_form .btn {
+    width: auto;
+    position: absolute;
+    bottom: 35px;
+    left: 24px;
+    right: 24px;
+  }
+  .we_do {
+    display: block;
+    padding-top: 42px;
+    padding-bottom: 30px;
+  }
+  .we_do .title_h2 {
+    margin-bottom: 42px;
+  }
+  .we_do__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .we_do__block {
+    width: 100%;
+    min-height: 343px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 28px 33px 40px 33px;
+    margin-bottom: 16px;
+  }
+  .we_do__block .number {
+    width: 100%;
+    text-align: start;
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 115px;
+    margin-bottom: 8px;
+  }
+  .we_do__block .content {
+    width: 100%;
+    padding: 0;
+  }
+  .liquidation2 {
+    display: block;
+    padding-bottom: 18px;
+  }
+  .liquidation2 .title_h2 {
+    max-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .liquidation2__box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .liquidation2__block {
+    width: 100%;
+    height: 420px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+  .liquidation2__block .content {
+    width: auto;
+    height: 356px;
+    left: 23px;
+    right: 23px;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    padding: 31px 30px 91px 24px;
+  }
+  .liquidation2__block .title {
+    font-size: 23px;
   }
 }
