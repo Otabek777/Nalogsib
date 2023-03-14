@@ -1304,7 +1304,7 @@ ul, ol {
 
 .accordion_btn {
   width: 100%;
-  height: 76px;
+  min-height: 76px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2395,7 +2395,7 @@ ul, ol {
     padding: 0 12px;
     background: transparent;
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .header__navbar li {
     width: 100%;
@@ -2529,7 +2529,7 @@ ul, ol {
   }
   .registration {
     display: block;
-    padding-top: 82px;
+    padding-top: 102px;
     padding-bottom: 24px;
     position: relative;
   }
@@ -2539,7 +2539,7 @@ ul, ol {
     text-align: center;
     position: absolute;
     left: 50%;
-    top: 0;
+    top: 20px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
@@ -3100,5 +3100,114 @@ ul, ol {
   }
   .liquidation2__block .title {
     font-size: 23px;
+  }
+  .consultation_form.legal .consultation_form__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 46px 24px 37px 24px;
+  }
+  .consultation_form__block .input_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .consultation_form__block .input_box .left, .consultation_form__block .input_box .right {
+    width: 100%;
+  }
+  .consultation_form.legal .title {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 30px;
+  }
+  .invitation {
+    display: block;
+    background: url(../img/invitation-bg-mobile.png) no-repeat center/cover;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  .invitation .title_h2 {
+    margin-bottom: 30px;
+  }
+  .invitation__checked {
+    margin-bottom: 40px;
+  }
+  .invitation__checked .check {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 14px;
+  }
+  .invitation__checked .text {
+    max-width: 246px;
+    width: 100%;
+  }
+  .invitation__wrap .form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .invitation__wrap .form .input input {
+    background-color: transparent;
+  }
+  .invitation__wrap .form .input {
+    margin-bottom: 30px;
+  }
+  .area_city {
+    display: block;
+    padding-top: 72px;
+    padding-bottom: 15px;
+  }
+  .area_city__wrap {
+    padding: 32px 20px 40px 20px;
+  }
+  .area_city__wrap .img {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    margin-bottom: 32px;
+  }
+  .area_city__wrap .text_bold {
+    font-weight: 800;
+  }
+  .questions {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .questions__box {
+    margin-top: 24px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .questions__box .left {
+    width: 100%;
+  }
+  .questions__box .right {
+    width: 100%;
+  }
+  .accordion_btn {
+    padding: 13px 26px 13px 16px;
+  }
+  .accordion_btn .title {
+    width: calc(100% - 40px);
+  }
+  .accordion_block .wrap {
+    padding: 13px 27px 24px 16px;
+  }
+  .accordion_block .wrap::after {
+    left: 16px;
+    right: 27px;
   }
 }
