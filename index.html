@@ -59,6 +59,9 @@
                             <a href="tel:+7 383 277 87 66" class="phone">+7 383 277 87 66</a>
                             <p class="time">пн-пт  10:00 20:00</p>
                         </div>
+                        <button class="header__burgir">
+                            <span></span><span></span><span></span>
+                        </button>
                         <button class="header__call">Перезвоните нам</button>
                     </div>
                 </div>
@@ -67,27 +70,29 @@
     </header>
     <main class="main">
         <section class="banner">
-            <div class="container">
-                <div class="banner__slider">
-                    <div class="banner__wrap">
+            <div class="banner__slider">
+                <div class="banner__wrap">
+                    <div class="container">
                         <div class="banner__block">
                             <h2 class="banner__title">Регистрация ИП </h2>
                             <p class="banner__text"></p>
-                            <a href="#" class="banner__btn">Бесплатно</a>
+                            <a href="#" class="banner__btn">Подробнее</a>
                             <div class="banner__img">
                                 <img src="img/man.png" alt="" class="img">
-                                <img src="img/man-bg.png" alt="" class="back">
+                                <img src="img/man-bg.svg" alt="" class="back">
                             </div>
                         </div>
                     </div>
-                    <div class="banner__wrap">
+                </div>
+                <div class="banner__wrap">
+                    <div class="container">
                         <div class="banner__block">
                             <h2 class="banner__title">Регистрация ИП </h2>
                             <p class="banner__text"></p>
                             <a href="#" class="banner__btn">Бесплатно</a>
                             <div class="banner__img">
                                 <img src="img/man.png" alt="" class="img">
-                                <img src="img/man-bg.png" alt="" class="back">
+                                <img src="img/man-bg.svg" alt="" class="back">
                             </div>
                         </div>
                     </div>
@@ -227,7 +232,7 @@
                 <div class="title_h2">
                     <h2 class="h2">Какие услуги мы предлагаем</h2>
                 </div>
-                <div class="arrows_box">
+                <!-- <div class="arrows_box">
                     <button class="prev">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="8" viewBox="0 0 16 8" fill="none">
                             <path d="M3.99 3H16V5H3.99V8L0 4L3.99 0V3Z" fill="#444444"/>
@@ -238,7 +243,7 @@
                             <path d="M12.01 3H0V5H12.01V8L16 4L12.01 0V3Z" fill="#444444"/>
                         </svg>
                     </button>
-                </div>
+                </div> -->
                 <div class="services__slider">
                     <div class="services__wrap">
                         <a href="#" class="services__block">
@@ -278,20 +283,25 @@
         <section class="consultation_form">
             <div class="container">
                 <div class="consultation_form__wrap">
+                    <img src="img/form.png" alt="" class="line">
+                    <img src="img/form-2.svg" alt="" class="icon">
                     <p class="title">Получить консультацию специалиста</p>
                     <form class="consultation_form__block">
                         <div class="input">
-                            <input type="text" placeholder="Имя">
+                            <input type="text" placeholder="Как к Вам обращаться">
                         </div>
                         <div class="input">
-                            <input type="text" placeholder="+7 ХХХ ХХХ ХХ ХХ" class="input_phone tel">
+                            <input type="text" placeholder="Электронная почта">
                         </div>
                         <div class="input">
-                            <input type="text" placeholder="e-mail">
+                            <input type="text" placeholder="Контактный номер телефона" class="input_phone tel">
                         </div>
                         <textarea class="textarea" placeholder="Комментарий"></textarea>
                         <div class="box">
-                            <h5 class="h5">Я даю согласие на обработку персональных данных</h5>
+                            <div class="check">
+                                <input type="checkbox" id="1">
+                                <label for="1">Я даю согласие на обработку персональных данных</label>
+                            </div>
                             <button class="btn">Отправить</button>
                         </div>
                     </form>
